@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+body,html {
+  height:100%;
+  margin:0;
+  font-family:lato;
+  background-size: cover;
+  background-image: url(/FBS_SE1627/mainPage/user-services/images/fieldimage.png);
+}
+
+.container {
+  height:auto;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+      -ms-flex-align:center;
+          align-items:center;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  /* background:-webkit-linear-gradient(#c5e5e5, #ccddf9);
+  background:linear-gradient(#c9e5e9,#ccddf9); */
+  overflow-y: hidden;
+}
+ul {
+  margin:0;
+  padding:0;
+}
+
+ul li {
+  list-style:none;
+  padding-left:10px;
+  cursor:pointer;
+  color: rgb(249, 248, 248);
+	margin: 20px;
+}
+
+ul li:hover {
+  background:rgba(255,255,255,0.1);
+}
+
+.window {
+  height:auto;
+  width:800px;
+  /* background:#599ee7; */
+  background-size: cover;
+  background-image: url(/user-services/images/MU.png);
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  border-radius:30px;
+  z-index:10;
+  margin: 20px 20px;
+  
+  
+}
+.order-info {
+  height:auto;
+  width:100%;
+  padding-left:25px;
+  padding-right:25px;
+  box-sizing:border-box;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  position:relative;
+  margin-bottom: 15px;
+}
+
+.line {
+  height:1px;
+  width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  background:#ddd;
+}
+
+.line-total {
+  height:5px;
+  width:100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  background:#ddd;
+}
+
+@media (max-width: 600px) {
+  .window {
+    width: 100%;
+    height: 100%;
+    display:block;
+    border-radius:0px;
+  }
+  .order-info {
+    width:100%;
+    height:auto;
+    padding-bottom:100px;
+    border-radius:0px;
+  }
+}
+
+#booking-form td:first-of-type {
+	width:auto;
+  }
+#booking-form {
+	  position:relative;
+  }
+
+.booking-form {
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+	
+}
+
+.booking-form .form-header {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.booking-form .form-header h3 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: rgb(247, 228, 228);
+	margin: 0px;
+}
+
+.booking-form>form {
+	/* background-color: #101113; */
+	padding: 30px 20px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.booking-form .form-control {
+	background-color: #f5f5f5;
+	border: none;
+	height: 45px;
+	border-radius: 3px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-weight: 400;
+	color: #101113;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(16, 17, 19, 0.3);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #101113;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	color: rgb(247, 228, 228);
+	font-size: 12px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.booking-form .submit-btn {
+	color: #101113;
+	background-color: #ffc001;
+	font-weight: 700;
+	height: 50px;
+	border: none;
+	width: 100%;
+	display: block;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+/* body::-webkit-scrollbar {
+	width: 12px;            
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #93bdc3;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #4488dd;   
+	border-radius: 20px;     
+	border: 3px solid aqua;  
+  } */
+
+  body::-webkit-scrollbar{
+	  display: none;
+  }
+
+  .btn-showtime {
+    margin-bottom: 4px;
+    line-height: 14px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
